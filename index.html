@@ -22,6 +22,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            padding: 20px;
             overflow: hidden;
         }
 
@@ -125,8 +126,14 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            body {
+                padding: 10px; /* Padding for small screens */
+            }
+
             .contact-container {
                 padding: 30px;
+                width: 100%; /* Full width on mobile */
+                max-width: 100%; /* Full width on mobile */
             }
 
             .contact-container h1 {
@@ -135,6 +142,16 @@
 
             .contact-container p {
                 font-size: 1rem;
+            }
+
+            .form-group input,
+            .form-group textarea,
+            button {
+                font-size: 1rem; /* Adjust font size for mobile */
+            }
+
+            button {
+                padding: 12px;
             }
         }
     </style>
